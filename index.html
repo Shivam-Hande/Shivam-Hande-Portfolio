@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shivam Hande - Aspiring Data Analyst & Data Scientist Portfolio">
+    <title>Shivam Hande - Data Analyst & Data Scientist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Smooth Scroll Behavior -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-blue-600">Shivam Hande</a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="hover:text-blue-600 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-600 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-600 transition duration-300">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-600 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-600 transition duration-300">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="mobileMenuBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <ul id="mobileMenu" class="hidden md:hidden pb-4 space-y-2">
+                <li><a href="#home" class="block px-2 py-1 hover:text-blue-600 transition">Home</a></li>
+                <li><a href="#about" class="block px-2 py-1 hover:text-blue-600 transition">About</a></li>
+                <li><a href="#skills" class="block px-2 py-1 hover:text-blue-600 transition">Skills</a></li>
+                <li><a href="#projects" class="block px-2 py-1 hover:text-blue-600 transition">Projects</a></li>
+                <li><a href="#contact" class="block px-2 py-1 hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl">
+            <!-- Profile Photo -->
+            <div class="mb-8 flex justify-center">
+                <div class="relative">
+                    <!-- Subtle background ring -->
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-100 to-indigo-100 blur-xl opacity-50"></div>
+                    <!-- Profile image -->
+                    <img 
+                        src="profile.jpg" 
+                        alt="Shivam Hande profile photo" 
+                        class="relative w-36 h-36 sm:w-48 sm:h-48 rounded-full border-2 border-blue-600 shadow-2xl object-cover ring-4 ring-white ring-offset-2 ring-offset-blue-100 hover:scale-110 transition-transform duration-300 cursor-pointer"
+                    >
+                </div>
+            </div>
+            
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-4">
+                Shivam Hande
+            </h1>
+            <p class="text-xl sm:text-2xl text-blue-600 font-semibold mb-6">
+                Aspiring Data Analyst & Data Scientist
+            </p>
+            <p class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+                I transform raw data into actionable insights using Python, SQL, and advanced analytics. 
+                Passionate about uncovering patterns, building predictive models, and driving data-driven decisions.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300 shadow-md transform hover:scale-105 hover:shadow-lg">
+                    View Projects
+                </a>
+                <a href="#contact" class="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition duration-300 shadow-md transform hover:scale-105 hover:shadow-lg">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="py-16 sm:py-24 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">About Me</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- About Content -->
+                <div>
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        I am an aspiring data analyst and data scientist with a strong foundation in statistical analysis, 
+                        data visualization, and machine learning. My journey involves dissecting complex datasets to uncover 
+                        meaningful patterns and translating them into strategic business insights.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        With expertise in Python, SQL, and Power BI, I specialize in creating data pipelines, 
+                        performing exploratory data analysis, and building predictive models. I believe in the power of 
+                        data-driven decision-making and strive to help organizations leverage their data for competitive advantage.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Currently based in India, I'm actively working on projects that demonstrate my ability to handle 
+                        real-world business problems through advanced analytics and machine learning techniques.
+                    </p>
+                </div>
+                
+                <!-- Info Cards -->
+                <div class="space-y-6">
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
+                        <h3 class="font-bold text-blue-600 mb-2">📊 Data Analysis</h3>
+                        <p class="text-gray-700">Extracting insights from data to drive business decisions</p>
+                    </div>
+                    <div class="bg-indigo-50 p-6 rounded-lg border-l-4 border-indigo-600">
+                        <h3 class="font-bold text-indigo-600 mb-2">🤖 Machine Learning</h3>
+                        <p class="text-gray-700">Building predictive models for business problems</p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
+                        <h3 class="font-bold text-purple-600 mb-2">📈 Visualization</h3>
+                        <p class="text-gray-700">Creating compelling visual narratives from data</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="py-16 sm:py-24 bg-slate-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Skills & Expertise</h2>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Programming -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">💻 Programming</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            Python
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            SQL
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                            Data Structures
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-4">📊 Data Analysis</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>
+                            Pandas
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>
+                            NumPy
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>
+                            Excel Analytics
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Visualization -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-purple-600 mb-4">📈 Visualization</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                            Power BI
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                            Matplotlib
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                            Seaborn
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-pink-600 mb-4">🤖 Machine Learning</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-pink-600 rounded-full mr-3"></span>
+                            Regression
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-pink-600 rounded-full mr-3"></span>
+                            Classification
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-pink-600 rounded-full mr-3"></span>
+                            Scikit-learn
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="py-16 sm:py-24 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Project 1: Customer Churn Analysis -->
+                <div class="bg-slate-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 border-2 border-transparent hover:border-blue-600 transition-all duration-300">
+                    <div class="bg-blue-600 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Customer Churn Analysis</h3>
+                        <p class="text-gray-700 mb-4">
+                            Analyzed customer behavior patterns to identify churn indicators. Built predictive models 
+                            using machine learning to anticipate customer attrition and recommend retention strategies.
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm text-gray-600 font-semibold mb-2">Tools Used:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Python</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Pandas</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Scikit-learn</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Power BI</span>
+                            </div>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition">
+                            View on GitHub
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Customer Lifetime Value Prediction -->
+                <div class="bg-slate-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 border-2 border-transparent hover:border-indigo-600 transition-all duration-300">
+                    <div class="bg-indigo-600 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Customer Lifetime Value (CLV) Prediction</h3>
+                        <p class="text-gray-700 mb-4">
+                            Developed regression models to predict customer lifetime value based on behavioral metrics. 
+                            This insights helped prioritize high-value customers and optimize marketing spend allocation.
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm text-gray-600 font-semibold mb-2">Tools Used:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">SQL</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">Python</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">NumPy</span>
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">Matplotlib</span>
+                            </div>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700 transition">
+                            View on GitHub
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: E-commerce Sales Dashboard -->
+                <div class="bg-slate-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 border-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    <div class="bg-purple-600 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">E-commerce Sales Dashboard</h3>
+                        <p class="text-gray-700 mb-4">
+                            Created interactive Power BI dashboards for real-time sales monitoring. Dashboard tracks KPIs, 
+                            regional trends, and product performance to enable quick decision-making for stakeholders.
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm text-gray-600 font-semibold mb-2">Tools Used:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Power BI</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">SQL</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Excel</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">DAX</span>
+                            </div>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition">
+                            View on GitHub
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: House Price Prediction -->
+                <div class="bg-slate-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 border-2 border-transparent hover:border-pink-600 transition-all duration-300">
+                    <div class="bg-pink-600 h-2"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">House Price Prediction</h3>
+                        <p class="text-gray-700 mb-4">
+                            Built machine learning regression models to predict house prices based on multiple features. 
+                            Performed feature engineering and model optimization to achieve high accuracy predictions.
+                        </p>
+                        <div class="mb-4">
+                            <p class="text-sm text-gray-600 font-semibold mb-2">Tools Used:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">Python</span>
+                                <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">Scikit-learn</span>
+                                <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">Pandas</span>
+                                <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">Seaborn</span>
+                            </div>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-pink-600 font-semibold hover:text-pink-700 transition">
+                            View on GitHub
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-16 sm:py-24 bg-slate-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">Get In Touch</h2>
+            <p class="text-center text-gray-700 mb-12 text-lg">
+                Have a project in mind or want to discuss data analytics? Feel free to reach out!
+            </p>
+            
+            <div class="bg-white p-8 sm:p-12 rounded-lg shadow-lg">
+                <form class="space-y-6">
+                    
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition"
+                            placeholder="Your name"
+                        >
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition"
+                            placeholder="your.email@example.com"
+                        >
+                    </div>
+
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition resize-vertical"
+                            placeholder="Your message here..."
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex justify-center pt-4">
+                        <button 
+                            type="submit" 
+                            class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300 shadow-md transform hover:scale-105"
+                        >
+                            Send Message
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="mt-12 grid sm:grid-cols-2 gap-8 text-center">
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Email</h3>
+                    <a href="mailto:shivamhande58@gmail.com" class="text-blue-600 hover:text-blue-700 font-semibold transition">shivamhande58@gmail.com</a>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-2">Location</h3>
+                    <p class="text-gray-700">India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                
+                <!-- About -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white">Shivam Hande</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Data Analyst & Data Scientist passionate about turning data into insights.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white">Quick Links</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#home" class="hover:text-blue-400 transition duration-300">Home</a></li>
+                        <li><a href="#about" class="hover:text-blue-400 transition duration-300">About</a></li>
+                        <li><a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white">Connect With Me</h3>
+                    <div class="flex space-x-5">
+                        <a href="#" class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-500 hover:scale-110 hover:shadow-lg transition-all duration-300" title="GitHub">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-500 hover:scale-110 hover:shadow-lg transition-all duration-300" title="LinkedIn">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 pt-8">
+                <p class="text-center text-gray-400">
+                    &copy; 2026 Shivam Hande. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== MOBILE MENU SCRIPT ==================== -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
